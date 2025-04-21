@@ -1,11 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Catálogo de Curso Online</title>
 </head>
-<body>
     
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-gradient">
+        <div class="container">
+        <a class="navbar-brand" href="#">Mi Academia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="menuNavbar">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cursos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <header class="py-5 text-center bg-light">
+        <div class="container">
+          <h1 class="display-4">Catálogo de Cursos Online</h1>
+          <p class="lead text-muted">Explora nuestros cursos y mejora tus habilidades</p>
+        </div>
+      </header>
+
+
+
+    
+
+        <!-- SECCIÓN DE CARDS -->
+    <section class="py-5">
+        <div class="container">
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"  width="300" height="200" class="card-img-top" alt="Curso 1">
+                <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Introducción a HTML</h5>
+                <p class="card-text">Aprende los fundamentos del lenguaje de marcado para crear páginas web.</p>
+                <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalCurso1">Ver más</button>
+                </div>
+            </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="300" height="200"  class="card-img-top" alt="Curso 4">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Introducción a CSS</h5>
+                    <p class="card-text">Aprende a estilizar tus páginas web usando hojas de estilo en cascada (CSS).</p>
+                    <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalCurso4">Ver más</button>
+                </div>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="300" height="200" class="card-img-top" alt="Curso 3">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">JavaScript para Principiantes</h5>
+                    <p class="card-text">Aprende los conceptos básicos de JavaScript y cómo interactuar con páginas web.</p>
+                    <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalCurso3">Ver más</button>
+                </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                <img src="https://previews.123rf.com/images/pikepicture/pikepicture2008/pikepicture200801771/153927999-vector-de-icono-de-dise%C3%B1o-de-interfaz-de-usuario-ux-signo-de-dise%C3%B1o-de-interfaz-de-usuario-ux.jpg"  width="300" height="200"  class="card-img-top" alt="Curso 2">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Diseño UX Básico</h5>
+                    <p class="card-text">Conoce los principios del diseño centrado en el usuario y crea mejores experiencias.</p>
+                    <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalCurso2">Ver más</button>
+                </div>
+                </div>
+            </div>
+
+        
+
+            <!-- Card 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" class="card-img-top" alt="Curso 5">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Git y GitHub para Desarrolladores</h5>
+                    <p class="card-text">Aprende a manejar control de versiones y colaborar en proyectos usando Git y GitHub.</p>
+                    <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalCurso5">Ver más</button>
+                </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"class="card-img-top" alt="Curso 6">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Frameworks Frontend: React</h5>
+                    <p class="card-text">Aprende a desarrollar aplicaciones web modernas usando React.</p>
+                    <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalCurso6">Ver más</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- SECCIÓN DE MODALES -->
+  <!-- Modal Curso 1 -->
+    <div class="modal fade" id="modalCurso1" tabindex="-1" aria-labelledby="modalCurso1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modalCurso1Label">Introducción a HTML</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+            <p><strong>Descripción:</strong> Este curso te enseñará a estructurar páginas web usando etiquetas HTML. Ideal para principiantes.</p>
+            <p><strong>Duración:</strong> 6 horas</p>
+            <p><strong>Nivel:</strong> Básico</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+  <!-- Modal Curso 2 -->
+    <div class="modal fade" id="modalCurso2" tabindex="-1" aria-labelledby="modalCurso2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modalCurso2Label">Diseño UX Básico</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+            <p><strong>Descripción:</strong> Aprende a diseñar interfaces más intuitivas aplicando fundamentos de UX desde cero.</p>
+            <p><strong>Duración:</strong> 4 horas</p>
+            <p><strong>Nivel:</strong> Básico</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+ <!-- Modal Curso 3 -->
+    <div class="modal fade" id="modalCurso3" tabindex="-1" aria-labelledby="modalCurso3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalCurso3Label">JavaScript para Principiantes</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Descripción:</strong> Aprende a programar con JavaScript, el lenguaje de la web, para crear sitios interactivos.</p>
+              <p><strong>Duración:</strong> 10 horas</p>
+              <p><strong>Nivel:</strong> Básico</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Curso 4 -->
+    <div class="modal fade" id="modalCurso4" tabindex="-1" aria-labelledby="modalCurso4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modalCurso4Label">Introducción a CSS</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+            <p><strong>Descripción:</strong> Aprende cómo dar estilo a tus sitios web usando CSS, desde el color de fondo hasta la tipografía.</p>
+            <p><strong>Duración:</strong> 7 horas</p>
+            <p><strong>Nivel:</strong> Básico</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal Curso 5 -->
+    <div class="modal fade" id="modalCurso5" tabindex="-1" aria-labelledby="modalCurso5Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modalCurso5Label">Git y GitHub para Desarrolladores</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+            <p><strong>Descripción:</strong> Aprende a utilizar Git y GitHub, herramientas esenciales para el control de versiones y trabajo en equipo.</p>
+            <p><strong>Duración:</strong> 5 horas</p>
+            <p><strong>Nivel:</strong> Intermedio</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal Curso 6 -->
+    <div class="modal fade" id="modalCurso6" tabindex="-1" aria-labelledby="modalCurso6Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modalCurso6Label">Frameworks Frontend: React</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+            <p><strong>Descripción:</strong> Introducción a React, una biblioteca popular de JavaScript para crear interfaces de usuario dinámicas.</p>
+            <p><strong>Duración:</strong> 12 horas</p>
+            <p><strong>Nivel:</strong> Avanzado</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Formulario de suscripción -->
+    <section class="container my-5">
+        <h2 class="text-center">Suscríbete para más información</h2>
+        <form class="row g-3 justify-content-center">
+        <div class="col-md-6">
+            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Suscribirme</button>
+        </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="navbar-gradient text-white text-center py-4">
+        <div class="container text-center">
+        <p>&copy; 2025 Mi Academia.</p>
+        <p>Todos los derechos reservados.</p>
+        <p>
+            <a href="#" class="text-white text-decoration-none mx-2">Política de privacidad</a>
+            <a href="#" class="text-white text-decoration-none mx-2">Términos de servicio</a>
+        </p>
+        </div>
+    </footer>
+
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

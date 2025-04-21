@@ -1,0 +1,171 @@
+:root {
+    --violeta: #7b1fa2;
+    --violeta-oscuro: #512da8;
+    --violeta-claro: #f3e5f5;
+    --amarillo: #ffd54f;
+    --gris-fondo: #f8f9fa;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--gris-fondo);
+    color: #222;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-gradient {
+    background: linear-gradient(90deg, var(--violeta), #9575cd);
+  }
+  .navbar-gradient .nav-link,
+  .navbar-gradient .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-gradient .nav-link:hover {
+    color: var(--amarillo) !important;
+    text-decoration: underline;
+  }
+  
+  header {
+    background: #fff;
+    padding: 3rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  h1, h2 {
+    color: var(--violeta-oscuro);
+    font-weight: 700;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(123, 31, 162, 0.06);
+    transition: transform 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 6px 20px rgba(123, 31, 162, 0.10);
+  }
+  .card-img-top {
+    border-radius: 12px 12px 0 0;
+    border-bottom: none;
+    height: 180px;
+    object-fit: contain;
+    background: var(--violeta-claro);
+  }
+  .card-title {
+    color: var(--violeta);
+    font-weight: 600;
+  }
+  .card-text {
+    color: #444;
+  }
+  
+  .btn-primary {
+    background-color: var(--violeta);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 24px;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: var(--violeta-oscuro);
+  }
+
+  .modal-content {
+    border-radius: 15px;
+    background: #fff;
+    border: none;
+    box-shadow: 0 4px 20px rgba(123, 31, 162, 0.10); /* Sombra violeta muy suave */
+    padding: 0;
+  }
+  
+  .modal-header {
+    background: #f3e5f5; /* Lila claro, igual que las cards */
+    color: #7b1fa2;       /* Violeta principal */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: none;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  
+  .modal-title {
+    color: #7b1fa2;
+    font-weight: 600;
+  }
+  
+  .modal-body {
+    color: #333;
+    font-size: 1.05rem;
+    padding: 1.5rem 2rem;
+  }
+  
+  .modal-footer {
+    background: transparent;
+    border-top: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+  }
+  
+  /* Botón "Cerrar" del modal */
+  .modal-footer .btn-secondary {
+    background: #7b1fa2;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 22px;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  
+  .modal-footer .btn-secondary:hover,
+  .modal-footer .btn-secondary:focus {
+    background: #512da8;
+  }
+  
+  /* Botón de cierre (X) */
+  .btn-close {
+    filter: invert(45%) sepia(70%) saturate(500%) hue-rotate(235deg);
+    opacity: 0.7;
+  }
+  .btn-close:hover {
+    opacity: 1;
+  }
+
+  .form-control {
+    border-radius: 24px;
+    border: 1px solid #b39ddb;
+    background: #fafafa;
+  }
+  .form-control:focus {
+    border-color: var(--violeta);
+    box-shadow: 0 0 0 0.1rem #b39ddb;
+  }
+  
+  footer {
+    background: var(--violeta-oscuro);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  footer a {
+    color: var(--amarillo);
+    margin: 0 8px;
+  }
+  footer a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.25rem; }
+    .card-img-top { height: 120px; }
+  }
+  
